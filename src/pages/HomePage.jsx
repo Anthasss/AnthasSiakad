@@ -1,3 +1,12 @@
+import TopGrid from "../components/homeComponents/TopGrid";
+
 export default function HomePage() {
-  return <div className="p-4 bg-primary-500 text-primary-100">Hello, world!</div>;
+  return (
+    <div className="h-auto">
+      <div className="grid grid-rows-[auto,auto] p-4">
+        <TopGrid />
+        <div className="">Rest of content</div>
+      </div>
+    </div>
+  );
 }
