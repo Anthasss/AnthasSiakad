@@ -4,10 +4,10 @@ import IpsGraph from "./IpsGraph";
 
 export default function TopGrid() {
   return (
-    <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2">
+    <div className="grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 bg-base-300 rounded-lg shadow-sm p-4 gap-4">
       {/* greetings part */}
-      <div className="card card-side bg-base-100 shadow-sm px-2">
-        <img src="src\assets\greetingChara.svg" alt="Movie" className="w-48" />
+      <div className="card card-side shadow-sm px-2">
+        <img src="src\assets\GreetingChara.svg" alt="Movie" className="w-48" />
         <div className="card-body">
           <h2 className="card-title">Hai, mahasiswa!</h2>
           <p>Saat ini anda berada di Semester 4 dengan hasil IPS & IPK sebagai berikut.</p>
