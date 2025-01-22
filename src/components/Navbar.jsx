@@ -1,4 +1,15 @@
-import { ChevronDown, Menu, X, University, Megaphone, CalendarClock, CalendarDays } from "lucide-react";
+import {
+  ChevronDown,
+  Menu,
+  X,
+  University,
+  Megaphone,
+  CalendarClock,
+  CalendarDays,
+  PenLine,
+  TrendingUpDown,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -83,9 +94,11 @@ export default function Navbar() {
 
           <div className="join join-vertical w-full menu">
             <li className="collapse join-item border-base-300 border flex item-center h-full">
-              <div className="collapse-title text-xl font-medium flex">
-                <h1>Beranda</h1>
-              </div>
+              <Link to="/" className="p-0">
+                <div className="collapse-title text-xl font-medium flex">
+                  <h1>Beranda</h1>
+                </div>
+              </Link>
             </li>
 
             <div className="collapse collapse-arrow join-item border-base-300 border">
@@ -127,10 +140,10 @@ export default function Navbar() {
                   {/* Section Menu */}
 
                   <li>
-                    <a className="p-2">
-                      <Megaphone />
-                      Pengumuman
-                    </a>
+                    <Link to="/set-krs-mahasiswa" className="p-2">
+                      <PenLine />
+                      Pengisian KRS
+                    </Link>
                   </li>
 
                   <li>
@@ -189,23 +202,16 @@ export default function Navbar() {
                   {/* Section Menu */}
 
                   <li>
-                    <a className="p-2">
-                      <Megaphone />
-                      Pengumuman
-                    </a>
+                    <Link to="list-khs" className="p-2">
+                      <TrendingUpDown />
+                      Kartu Hasil Studi
+                    </Link>
                   </li>
 
                   <li>
                     <a className="p-2">
                       <CalendarClock />
-                      Kalender Akademik
-                    </a>
-                  </li>
-
-                  <li>
-                    <a className="p-2">
-                      <CalendarDays />
-                      Jadwal Minggu Ini
+                      Transkrip
                     </a>
                   </li>
                 </ul>

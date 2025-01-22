@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import HomePage from "./pages/HomePage";
+import ListKhsPage from "./pages/ListKhsPage";
+import SetKrsPage from "./pages/SetKrsPage";
 
 export default function App() {
   return (
@@ -14,6 +16,10 @@ export default function App() {
       <div className="flex-grow w-full">
         <Routes>
           <Route path="/" element={<HomePage />} />
+
+          <Route path="/set-krs-mahasiswa" element={<SetKrsPage />} />
+
+          <Route path="/list-khs" element={<ListKhsPage />} />
         </Routes>
       </div>
       <div className="mt-auto">
