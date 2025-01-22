@@ -5,7 +5,7 @@ const Tabs = ({ items }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="w-full max-w-3xl">
+    <div className="w-full">
       <div className="flex bg-base-300 rounded-t-lg border-b border-gray-200 justify-center">
         {items.map((item, index) => (
           <button

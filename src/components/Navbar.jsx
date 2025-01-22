@@ -94,7 +94,7 @@ export default function Navbar() {
 
           <div className="join join-vertical w-full menu">
             <li className="collapse join-item border-base-300 border flex item-center h-full">
-              <Link to="/" className="p-0">
+              <Link to="/" className="p-0" onClick={() => document.getElementById("menuModal").close()}>
                 <div className="collapse-title text-xl font-medium flex">
                   <h1>Beranda</h1>
                 </div>
@@ -140,7 +140,11 @@ export default function Navbar() {
                   {/* Section Menu */}
 
                   <li>
-                    <Link to="/set-krs-mahasiswa" className="p-2">
+                    <Link
+                      to="/set-krs-mahasiswa"
+                      className="p-2"
+                      onClick={() => document.getElementById("menuModal").close()}
+                    >
                       <PenLine />
                       Pengisian KRS
                     </Link>
@@ -169,7 +173,6 @@ export default function Navbar() {
               <div className="collapse-content">
                 <ul className="menu w-full p-0">
                   {/* Section Menu */}
-
                   <li>
                     <a className="p-2">
                       <Megaphone />
@@ -202,7 +205,7 @@ export default function Navbar() {
                   {/* Section Menu */}
 
                   <li>
-                    <Link to="list-khs" className="p-2">
+                    <Link to="list-khs" className="p-2" onClick={() => document.getElementById("menuModal").close()}>
                       <TrendingUpDown />
                       Kartu Hasil Studi
                     </Link>

@@ -38,7 +38,7 @@ export default function TopGrid() {
             {/* score */}
             <div className=" w-2/3">
               <h1>IPK</h1>
-              <h1 className="text-5xl">0.00</h1>
+              <h1 className="text-5xl">3.81</h1>
             </div>
 
             {/* rise fall */}
